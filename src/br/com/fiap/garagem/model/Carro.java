@@ -9,6 +9,15 @@ public class Carro {
     private String horaEntrada;
     private String horaSaida;
     private double valor;
+    private Cor cor;
+
+    public Cor getCor() {
+        return cor;
+    }
+
+    public void setCor(Cor cor) {
+        this.cor = cor;
+    }
 
     public String getHoraEntrada() {
         return horaEntrada;
