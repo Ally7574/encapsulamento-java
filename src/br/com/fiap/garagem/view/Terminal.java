@@ -1,24 +1,31 @@
 package br.com.fiap.garagem.view;
+import br.com.fiap.garagem.model.Cor;
 import br.com.fiap.garagem.model.Carro;
-import java.util.Scanner;
 
 public class Terminal {
     public static void main(String[] args) {
+        //criar o objeto cor
+        Cor color = new Cor();
+
+        //definir os valores dos atributos da cor
+        color.alterarCor(0,0,0, "preto");
+
+        //criar objeto carro
+        Carro delorian = new Carro();
+
+        //definir os valores dos atributos do carro
+        delorian.setMotor(1);
+        delorian.setModelo("DMC-12");
+        delorian.setQuantidadeLugares(2);
+        delorian.setQuantidadePortas(2);
+        delorian.setComprimento(4.27);
+        delorian.setPlaca("outatime");
 
 
-        Carro onix = new Carro();
-        onix.setPlaca("ABC1234");
-        onix.setSetor('A');
-        onix.setNumeroDaVaga(12);
-        onix.setHoraEntrada("14:00");
-        onix.setHoraSaida("17:00");
-        onix.setValor(50);
-        onix.setPreferencial(false);
-
-        System.out.println("placa do veiuculo: " + onix.getPlaca());
-        System.out.println("setor do veiculo: " + onix.getSetor() + " | na vaga: " + onix.getNumeroDaVaga());
-        System.out.println("horario de permanencia " + onix.getHoraEntrada() + " - " + onix.getHoraSaida());
-        System.out.println("valor por hora: " + onix.getValor());
-        System.out.println("preferencial: " + onix.isPreferencial());
+        //exibir os dados do carro (e a cor)
+        System.out.println("modelo: " + delorian.getModelo() + " | motor: " + delorian.getMotor());
+        System.out.println("quantidade de porta: " + delorian.getQuantidadePortas() + " | quantidade de assentos: " + delorian.getQuantidadeLugares());
+        System.out.println("tamanho do veiculo: " + delorian.getComprimento() + " | placa: " + delorian.getPlaca());
+        System.out.println("cor do veiculo: " + color.getNome() + " | informações do RGB: " + color.getR() + " | " + color.getG() + " | " + color.getB());
     }
 }
