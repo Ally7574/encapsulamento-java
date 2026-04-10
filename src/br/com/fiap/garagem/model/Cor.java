@@ -39,5 +39,10 @@ public class Cor {
     }
 
     public void alterarCor(int r, int g, int b, String nome){
+        this.r = r;
+        this.b = b;
+        this.g = g;
+        this.nome = nome;
+
     }
 }

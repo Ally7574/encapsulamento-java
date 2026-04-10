@@ -2,53 +2,40 @@ package br.com.fiap.garagem.model;
 
 public class Carro {
 
+    private String modelo;
+    private int quantidadeLugares;
+    private int quantidadePortas;
+    private double comprimento;
     private String placa;
-    private int numeroDaVaga;
-    private boolean preferencial;
-    private char setor;
-    private String horaEntrada;
-    private String horaSaida;
-    private double valor;
-    private Cor cor;
+    private float motor;
 
-    public Cor getCor() {
-        return cor;
+    Cor cor = new Cor();
+
+    //Getters e Setters
+
+
+    public String getModelo() {
+        return modelo;
     }
 
-    public void setCor(Cor cor) {
-        this.cor = cor;
+    public void setModelo(String modelo) {
+        this.modelo = modelo;
     }
 
-    public String getHoraEntrada() {
-        return horaEntrada;
+    public int getQuantidadeLugares() {
+        return quantidadeLugares;
     }
 
-    public void setHoraEntrada(String horaEntrada) {
-        this.horaEntrada = horaEntrada;
+    public void setQuantidadeLugares(int quantidadeLugares) {
+        this.quantidadeLugares = quantidadeLugares;
     }
 
-    public char getSetor() {
-        return setor;
+    public int getQuantidadePortas() {
+        return quantidadePortas;
     }
 
-    public void setSetor(char setor) {
-        this.setor = setor;
-    }
-
-    public boolean isPreferencial() {
-        return preferencial;
-    }
-
-    public void setPreferencial(boolean preferencial) {
-        this.preferencial = preferencial;
-    }
-
-    public int getNumeroDaVaga() {
-        return numeroDaVaga;
-    }
-
-    public void setNumeroDaVaga(int numeroDaVaga) {
-        this.numeroDaVaga = numeroDaVaga;
+    public void setQuantidadePortas(int quantidadePortas) {
+        this.quantidadePortas = quantidadePortas;
     }
 
     public String getPlaca() {
@@ -59,21 +46,27 @@ public class Carro {
         this.placa = placa;
     }
 
-    public String getHoraSaida() {
-        return horaSaida;
+    public double getComprimento() {
+        return comprimento;
     }
 
-    public void setHoraSaida(String horaSaida) {
-        this.horaSaida = horaSaida;
+    public void setComprimento(double comprimento) {
+        this.comprimento = comprimento;
     }
 
-    public double getValor() {
-        return valor;
+    public float getMotor() {
+        return motor;
     }
 
-    public void setValor(double valor) {
-        this.valor = valor;
+    public void setMotor(float motor) {
+        this.motor = motor;
+    }
+
+    public Cor getCor() {
+        return cor;
+    }
+
+    public void setCor(Cor cor) {
+        this.cor = cor;
     }
 }
-
-
